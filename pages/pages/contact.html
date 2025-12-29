@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Animal Rescue Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color:green;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color:lightblue ;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            background-color:green;
+            color: white;
+            padding: 30px;
+            text-align: center;
+           font-size:40px;
+        }
+h3 {
+    color: darkgrey;
+}
+
+        .center-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+form {
+    background-color: #f1f8e9;
+    padding: 30px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+    border: 1px solid #2e7d32;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+input[type="submit"] {
+    background-color: #2e7d32;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #1b5e20;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Wild Guardians</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+<h2><u>Get Involved</u></h2>
+<section id="contact-form">
+    <form action="#">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="interest">How can you help?</label>
+        <select id="interest" name="interest">
+            <option value="adopt">Adopt an Animal</option>
+            <option value="volunteer">Volunteer my Time</option>
+            <option value="donate">Inquire about Donating</option>
+            <option value="rescue">Report an Animal in Need</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:150px"></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+<footer style="background:green; color:white; text-align:center; padding:12px; margin-top:40px;">
+    © 2025 Wild Guardians | Protecting Wildlife
+</footer>
+</body>
+</html>
